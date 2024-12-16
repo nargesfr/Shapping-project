@@ -1,0 +1,32 @@
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  
+    label {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #5a4231; // رنگ قهوه‌ای روشن
+    }
+  
+    select {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #d9b89c; // رنگ کرم
+      border-radius: 4px;
+      background-color: #f5efe4; // پس‌زمینه کرم
+      color: #5a4231; // رنگ متن قهوه‌ای
+      outline: none;
+      transition: border-color 0.3s ease;
+  
+      &:focus {
+        border-color: #a17f65; // رنگ قهوه‌ای تیره
+      }
+  
+      option {
+        background-color: #f5efe4; // پس‌زمینه کرم
+        color: #5a4231; // رنگ متن قهوه‌ای
+      }
+    }
+  }

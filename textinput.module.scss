@@ -1,0 +1,65 @@
+// Colors
+$cream: #f7f2e0; // رنگ کرم روشن
+$light-brown: #d1a150; // رنگ قهوه‌ای روشن
+$dark-brown: #6f3d1e; // رنگ قهوه‌ای تیره
+$error-red: #d9534f; // رنگ قرمز برای ارور
+$input-border: #c4a484; // رنگ حاشیه ورودی‌ها
+
+// Input Container
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $dark-brown;
+  }
+}
+
+// Input Wrapper
+.inputWrapper {
+  position: relative;
+
+  input {
+    padding: 10px;
+    border: 1px solid $input-border;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: $dark-brown;
+    background-color: $cream;
+    width: 100%;
+    
+    &:focus {
+      border-color: darken($input-border, 10%);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: lighten($dark-brown, 20%);
+    }
+  }
+}
+
+// Toggle Button (برای چشم‌های نمایش یا مخفی کردن پسورد)
+.toggleButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: $dark-brown;
+  
+  &:hover {
+    color: lighten($dark-brown, 15%);
+  }
+}
+
+// Error Message
+.error-message {
+  color: $error-red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}

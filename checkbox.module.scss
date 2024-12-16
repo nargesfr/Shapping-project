@@ -1,0 +1,33 @@
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  
+    input[type="checkbox"] {
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 2px solid #d9b89c; // رنگ کرم
+      border-radius: 4px;
+      background-color: #f5efe4; // پس‌زمینه کرم
+      cursor: pointer;
+      appearance: none;
+      transition: all 0.3s ease;
+  
+      &:checked {
+        background-color: #5a4231; // رنگ قهوه‌ای تیره
+        border-color: #5a4231; // حاشیه قهوه‌ای تیره
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(161, 127, 101, 0.5); // سایه برای تمرکز
+      }
+    }
+  
+    label {
+      font-size: 1rem;
+      color: #5a4231; // رنگ قهوه‌ای
+      cursor: pointer;
+    }
+  }
