@@ -1,0 +1,106 @@
+.cartPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdf5e6; /* کرم روشن */
+    color: #5a3825; /* قهوه‌ای تیره */
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2rem;
+  }
+  
+  .cart {
+    flex: 3;
+    background-color: #fffdf9; /* سفید با ته‌مایه کرم */
+    border: 1px solid #d9c6b1; /* حاشیه قهوه‌ای کم‌رنگ */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0d4c3;
+  }
+  
+  th {
+    background-color: #f3e9dd; /* کرم کم‌رنگ */
+  }
+  
+  td {
+    font-size: 0.9rem;
+  }
+  
+  .actions {
+    text-align: center;
+  }
+  
+  .remove-btn {
+    background-color: #e57373; /* قرمز ملایم */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #d32f2f; /* قرمز تیره */
+  }
+  
+  .checkout {
+    flex: 1;
+    background-color: #fffdf9; /* سفید با ته‌مایه کرم */
+    border: 1px solid #d9c6b1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .checkout h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkout div {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    background-color: #a67c52; /* قهوه‌ای متوسط */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8c6239; /* قهوه‌ای تیره‌تر */
+  }

@@ -1,0 +1,10 @@
+.menuContainer {
+    margin-left: 30px;
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr; /* یک ستون در صفحه‌های کوچک */
+    }
+}

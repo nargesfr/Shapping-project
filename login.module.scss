@@ -1,0 +1,94 @@
+
+$cream: #fdf6e4;
+$light-brown: #d3a588;
+$dark-brown: #8b5e3c;
+$input-border: #c4a484;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin card-shadow {
+  box-shadow: 0 4px 6px $shadow-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 12px $shadow-color;
+    transform: translateY(-5px);
+  }
+}
+
+// Main Container
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $cream;
+  padding: 20px;
+}
+
+// Form Card
+.form {
+  background-color: $light-brown;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  @include card-shadow;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $dark-brown;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $dark-brown;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid $input-border;
+      border-radius: 6px;
+      font-size: 1rem;
+      color: $dark-brown;
+      background-color: $cream;
+
+      &:focus {
+        border-color: darken($input-border, 10%);
+        outline: none;
+      }
+    }
+
+    .error-message {
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 4px;
+    }
+  }
+
+  .submit-button {
+    padding: 12px;
+    background-color: $dark-brown;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($dark-brown, 10%);
+    }
+  }
+}

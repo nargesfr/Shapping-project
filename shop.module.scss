@@ -1,0 +1,79 @@
+.shopContainer {
+    padding: 20px;
+    background-color: #f7f3e9; // رنگ پس‌زمینه کرم
+    color: #5c3d2e; // رنگ متن قهوه‌ای
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #5c3d2e;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .productCard {
+    background-color: #fff; // رنگ کارت سفید
+    border: 1px solid #e0d7c6; // حاشیه کرمی روشن
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // سایه ملایم
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px); // حالت شناور
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover; // نمایش تصویر در حالت مناسب
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+      color: #5c3d2e; // قهوه‌ای
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #7a6248; // قهوه‌ای روشن
+      margin-bottom: 15px;
+    }
+  
+    button {
+      background-color: #5c3d2e; // دکمه قهوه‌ای
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #7a6248; // قهوه‌ای روشن‌تر در حالت شناور
+      }
+    }
+  }
